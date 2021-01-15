@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root, body, html, #_0000 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+}
+
+pre._6g64x{
+  width: auto;
+  height: auto;
+}
+
+._6f64h p#_6f64b {
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  position: absolute;
+  left: 49%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* color: #daf6ff; */
+  color: red;
+  font-size: 35px;
+  white-space: pre-wrap;
+}
