@@ -14,10 +14,6 @@
   flex-wrap: wrap;
 }
 
-._4h34l{
- height: auto;
- width: auto;
-}
 
 #_4d34x {
   font-family: 'Share Tech Mono', monospace;
@@ -28,5 +24,17 @@
   transform: translate(-50%, -50%);
   color: #daf6ff;
   font-size: 50px;
+  white-space: nowrap;
+}
+
+#_4d34z {
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  position: absolute;
+  left: 46%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: #daf6ff;
+  font-size: 40px;
   white-space: nowrap;
 }

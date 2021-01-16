@@ -6,7 +6,7 @@
   <title>Floreroo</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://Floreroo.github.io/uploads/css_global/www-materialize-index.css">
+  <link rel="stylesheet" type="text/css" href="file:///C://Archivos/Github/Floreroo/uploads/css_global/www-materialize-index.css">
 </head>
 
 <body class="body">
@@ -15,17 +15,22 @@
       <div id="_4d34v">
         <div class="_4d34g">
           <div class="_4d34k">
-            <pre class="_4h34l">
-             <p id="_4d34x"></p>
-           </pre>
-         </div>
+            <p id="_4d34x"></p>
+            <p id="_4d34z">test</p>
+          </div>
+        </div>
+      </div>
+      <div id="_5c68b">
+        <div class="_5c68m">
+          <div class="_5c68m">
+            <div id="_5c68x"></div>
+          </div>
         </div>
       </div>
     </div>
 </body>
 <script type="text/javascript" src="https://Floreroo.github.io/uploads/javascript_modules/jquery.js"></script>
 <script type="text/javascript" src="https://Floreroo.github.io/uploads/javascript_modules/jquery.min.js"></script>
-<script type="text/javascript" src="https://Floreroo.github.io/uploads/javascript_modules/lang/es.js"></script>
 <script type="text/javascript">
   var countDownDate = new Date("Jan 13, 2025 UTC+1 17:00:00").getTime();
   var x = setInterval(function() {
@@ -35,12 +40,25 @@
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("_4d34x").innerHTML = days + "d " + hours + "h " +
-      minutes + "m " + seconds + "s ";
+    document.getElementById("_4d34x").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     if (distance < 0) {
       clearInterval(x);
+      document.getElementById("_4d34x").style.display = "none";
     }
   }, 1000);
+</script>
+<script type="text/javascript">
+  setInterval(function() {
+    var now = new Date();
+    var d = now.setDate(now.getUTCDay());
+    var mon = now.setMonth(new Date().getMonth());
+    var y = now.getFullYear();
+    var h = now.getHours();
+    var m = now.getMinutes();
+    var s = now.getSeconds();
+    document.getElementById("_4d34z").innerHTML = `
+        ${d.toString().substr(0,2)}/${mon.toString().substr(0,1)}/${y} ${h}:${m}:${s}
+    `}, 1000)
 </script>
 <script type="text/javascript">
   window.startTime = Date.now();
