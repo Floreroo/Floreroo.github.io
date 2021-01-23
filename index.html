@@ -45,50 +45,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
 <script type="text/javascript">
-  var countDownDate = new Date("Jan 13, 2025 UTC+1 17:00:00").getTime();
-  var x = setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("_4d34x").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("_4d34x").style.display = "none";
-    }
-  }, 1000);
+  var countDownDate = new Date("Jan 13, 2025 UTC+1 17:00:00").getTime();var x=setInterval(function(){var now=new Date().getTime();var distance=countDownDate-now;var days=Math.floor(distance/(1000*60*60*24));var hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));var minutes=Math.floor((distance%(1000*60*60))/(1000*60));var seconds=Math.floor((distance%(1000*60))/1000);document.getElementById("_4d34x").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";if (distance < 0) {clearInterval(x);document.getElementById("_4d34x").style.display="none";}},1000); setInterval(function(){var now=new Date();var d=now;function mon(month){return new Date(month).getDate();}var y=now.getFullYear();var h=now.getHours();var m=now.getMinutes();var s=now.getSeconds();document.getElementById("_4d34z").innerHTML=`${d.toString().substr(7,3)}/${mon(0)}/${y} ${h}:${m}:${s}`},1000);$(window).on("load", function() {$("#_2p29m").fadeOut(1000);});setInterval(()=>{function tz(){let timezone=jstz.determine();return timezone.name();}document.getElementById("_6ñ16x").innerHTML=tz();},1000);
 </script>
 <script type="text/javascript">
-  setInterval(function() {
-    var now = new Date();
-    var d = now.setDate(now.getUTCDay());
-    var mon = now.setMonth(new Date().getMonth());
-    var y = now.getFullYear();
-    var h = now.getHours();
-    var m = now.getMinutes();
-    var s = now.getSeconds();
-    document.getElementById("_4d34z").innerHTML = `
-        ${d.toString().substr(0,2)}/${mon.toString().substr(0,1)}/${y} ${h}:${m}:${s}
-    `
-},1000);
-</script>
-<script type="text/javascript" charset="utf-8">
-setInterval(() => {
-function tz(){let timezone=jstz.determine();return timezone.name();}
-  document.getElementById("_6ñ16x").innerHTML=tz();
-}, 1000);
 </script>
 <script type="text/javascript">
   window.startTime = Date.now();
-</script>
-<script type="text/javascript">
-</script>
-<script type="text/javascript">
-  $(window).on("load", function() {
-    $("#_2p29m").fadeOut(1000);
-  });
 </script>
 <iframe src="about:blank" style="display: none;"></iframe>
 
